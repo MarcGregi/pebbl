@@ -4,9 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
- // Test / driver code (temporary). Eventually will get this from the server.
-
-
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
@@ -46,14 +43,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // renderTweets(data);
 
 
-
   // Function To Prevent XXS
   function escape(text) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(text));
     return div.innerHTML;
   }
-
 
 
   // Post New Tweet
@@ -81,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
       });
    };
   });
-
 
 
   function validateForm(input) {
